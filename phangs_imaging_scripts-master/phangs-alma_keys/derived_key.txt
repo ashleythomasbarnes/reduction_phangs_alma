@@ -1,0 +1,54 @@
+##########################################################################
+# DERIVED PRODUCT DEFINITION KEY
+##########################################################################
+
+# This key defines the derived science-ready data products produced by
+# the by the pipeline. The general format is
+
+# configuration spectral_product field values
+
+# Column 1: configuration name (e.g., 12m+7m, 7m+tp, etc.). This needs
+# to refer to a configuration defined in the config_definition.
+
+# "all" is an acceptable wildcard.
+
+# Column 2: spectral product name.  This needs to refer to a
+# configuration defined in the config_definition.
+
+# "all" is an acceptable wildcard.
+
+# Column 3: derived product field being defined. These come from a
+# list of possible fields, see below.
+
+# Column 4: values input for that field. This is read as a literal
+# dictionary, avoid spaces. Multiple lines for a single field + config
+# + spectral product combination are fine. In general, later lines
+# overwrite previous ones.
+
+# FIELDS
+
+# phys_res - target physical resolutions in parsecs. Format is a a set
+# of 'tag':value pairs in which the value is the parsec target and the
+# tag is the tag to insert into filenames. Galaxies need defined
+# distances in order to be convolved to fixed physical resolutions.
+
+# ang_res - target angular resolutions in arcseconds. Format is a a
+# set of 'tag':value pairs in which the value is the arcsecond target
+# and the tag is the tag to insert into filenames.
+
+# convolve_kw - keywords for convolution.
+
+# noise_kw - keywords for noise estimation.
+
+# strictmask_kw - keywords for generation of stict masks.
+
+# broadmask_kw - keywords for generation of broad masks.
+
+# mask_configs - the names of other configurations to link when
+# creating broad masks. All masks for all linked configurations will
+# be combined to create the broad masks.
+
+# moments - the list of moments (defined in the moment key) to
+# calculate for that that config and spectral product pair.
+
+##########################################################################
