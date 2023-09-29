@@ -1,0 +1,58 @@
+##########################################################################
+# CONFIG_DEFINITIONS KEY
+##########################################################################
+
+#line_product    hn13c     {'line_tag':'hn13c10','channel_kms':10.0,'statwt_edge_kms':50.0}
+#line_product    hn13c     {'fitorder':0,'combinespw':False,'lines_to_flag':['hn13c','h13cop','cch','sio']}
+
+#line_product    h13cop     {'line_tag':'h13cop10','channel_kms':10.0,'statwt_edge_kms':50.0}
+#line_product    h13cop     {'fitorder':0,'combinespw':False,'lines_to_flag':['hn13c','h13cop','cch','sio']}
+
+#line_product    sio     {'line_tag':'sio21','channel_kms':10.0,'statwt_edge_kms':50.0}
+#line_product    sio     {'fitorder':0,'combinespw':False,'lines_to_flag':['hn13c','h13cop','cch','sio']}
+
+#line_product    cch     {'line_tag':'cch10','channel_kms':10.0,'statwt_edge_kms':50.0}
+#line_product    cch     {'fitorder':0,'combinespw':False,'lines_to_flag':['hn13c','h13cop','cch','sio']}
+
+#line_product    hnco     {'line_tag':'hnco43','channel_kms':10.0,'statwt_edge_kms':50.0}
+#line_product    hnco     {'fitorder':0,'combinespw':False,'lines_to_flag':['hcn','hcop','hnco']}
+
+#line_product    ha40     {'line_tag':'ha40','channel_kms':10.0,'statwt_edge_kms':50.0}
+#line_product    ha40     {'fitorder':0,'combinespw':False,'lines_to_flag':['cs','ha']}
+
+#line_product    so     {'line_tag':'cs21','channel_kms':10.0,'statwt_edge_kms':50.0}
+#line_product    so     {'fitorder':0,'combinespw':False,'lines_to_flag':['cs','so','ha']}
+
+
+######
+
+line_product    hcn     {'line_tag':'hcn10','channel_kms':5.0,'statwt_edge_kms':50.0}
+line_product    hcn     {'fitorder':0,'combinespw':False,'lines_to_flag':['hcn','hcop','hnco']}
+
+line_product    hcop    {'line_tag':'hcop10','channel_kms':5.0,'statwt_edge_kms':50.0}
+line_product    hcop    {'fitorder':0,'combinespw':False,'lines_to_flag':['hcn','hcop','hnco']}
+
+#line_product    cs     {'line_tag':'cs21','channel_kms':10.0,'statwt_edge_kms':50.0}
+#line_product    cs     {'fitorder':0,'combinespw':False,'lines_to_flag':['cs','so','ha']}
+
+#cont_product    cont    {'lines_to_flag':['hcn','hcop','cs','hnco','so','cch']}
+
+######
+
+#interf_config   7m      {'array_tags':['7m']}
+#interf_config   7m      {'clean_scales_arcsec':[0,15.0,30.0]}
+
+#feather_config  7m+tp   {'interf_config':'7m'}
+
+interf_config   12m    {'clean_scales_arcsec':[0,2.5,5.0,10.0]}
+interf_config   12m    {'array_tags':['12m']}
+
+interf_config   12m+7m    {'array_tags':['12m','7m']}
+interf_config   12m+7m    {'clean_scales_arcsec':[0,2.5,5.0,10.0]}
+
+feather_config  12m+7m+tp   {'interf_config':'12m+7m'}                                                         
+
+
+#########################################################################
+#########################################################################
+

@@ -1,0 +1,40 @@
+# %ECSV 0.9
+# ---
+# datatype:
+# - {name: galaxy, datatype: string}
+# - {name: dist, unit: Mpc, datatype: float32}
+# - {name: dist_unc, unit: dex, datatype: float32}
+# - {name: dist_label, datatype: string}
+# - {name: dist_ref, datatype: string}
+# delimiter: ','
+# meta: !!omap
+# - keywords: {date_updated: '2020-01-25', delimiter: ','}
+# - comments: [
+# This is the distance table read in to the PHANGS sample table,
+# The table records distance uncertainty method and reference,
+# The start of this table descends from sample table v1p4,
+# N.B. the units of uncertainty are dex (i.e. log),
+# ]
+# schema: astropy-2.0
+galaxy,dist
+ngc0628,9.77
+ngc1097,14.2
+ngc1365,18.1
+ngc1385,22.7
+ngc1511,15.6
+ngc1546,18.0
+ngc1566,18.0
+ngc1672,11.9
+ngc1792,12.8
+ngc2566,23.7
+ngc2903,8.47
+ngc2997,11.3
+ngc3059,19.8
+ngc3521,11.2
+ngc4321,15.2
+ngc4535,15.8
+ngc4536,15.2
+ngc5643,11.8
+ngc6300,13.1
+ngc7496,18.7
+                                                                                                                                                                                                                           1,1           T
