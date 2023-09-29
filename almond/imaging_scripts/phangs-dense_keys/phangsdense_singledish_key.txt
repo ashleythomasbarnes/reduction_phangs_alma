@@ -1,0 +1,132 @@
+##########################################################################
+# SINGLEDISH KEY
+##########################################################################
+
+# Key to define files of user-supplied single dish FITS files.
+
+# Currently (and for the foreseeable future) single dish FITS files
+# are created by an independent total power pipeline. The pipeline
+# requires that any single dish data used for feathering be provided
+# by the user. This file defines the locations of those data and maps
+# them to a target and product.
+ 
+# The syntax for the key is space or tab delimited:
+
+# Column 1: target name
+# Column 2: spectral product for this single dish image cube.
+# Column 3: file name (to be searched under 'singledish_root' directory)
+
+# PHANGS-ALMA examples:
+
+#ic1954      cycle5_data/ALMA_TP.IC1954.CO21.processed.fits        co21
+#ngc3621_1   cycle5_data/ALMA_TP.NGC3621.CO21.a.image.VLSRK.fits   co21
+#ngc3621_2   cycle5_data/ALMA_TP.NGC3621.CO21.b.image.VLSRK.fits   co21
+
+##########################################################################
+
+
+ngc0628         hcn     ALMA_TP.NGC_0628.HCN10.image.fits
+ngc0628         hcop    ALMA_TP.NGC_0628.HCOP10.image.fits
+ngc0628         cs      ALMA_TP.NGC_0628.CS21.image.fits
+
+ngc1097         hcn     ALMA_TP.NGC_1097.HCN10.image.fits
+ngc1097         hcop    ALMA_TP.NGC_1097.HCOP10.image.fits
+ngc1097         cs      ALMA_TP.NGC_1097.CS21.image.fits
+
+ngc1365         hcn     ALMA_TP.NGC_1365.HCN10.image.fits
+ngc1365         hcop    ALMA_TP.NGC_1365.HCOP10.image.fits
+ngc1365         cs      ALMA_TP.NGC_1365.CS21.image.fits
+
+ngc1385         hcn     ALMA_TP.NGC_1385.HCN10.image.fits
+ngc1385         hcop    ALMA_TP.NGC_1385.HCOP10.image.fits
+ngc1385         cs      ALMA_TP.NGC_1385.CS21.image.fits
+
+ngc1511         hcn     ALMA_TP.NGC_1511.HCN10.image.fits
+ngc1511         hcop    ALMA_TP.NGC_1511.HCOP10.image.fits
+ngc1511         cs      ALMA_TP.NGC_1511.CS21.image.fits
+
+ngc1546         hcn     ALMA_TP.NGC_1546.HCN10.image.fits
+ngc1546         hcop    ALMA_TP.NGC_1546.HCOP10.image.fits
+ngc1546         cs      ALMA_TP.NGC_1546.CS21.image.fits
+
+ngc1566         hcn     ALMA_TP.NGC_1566.HCN10.image.fits
+ngc1566         hcop    ALMA_TP.NGC_1566.HCOP10.image.fits
+ngc1566         cs      ALMA_TP.NGC_1566.CS21.image.fits
+
+ngc1672         hcn     ALMA_TP.NGC_1672.HCN10.C06.image.fits
+ngc1672         hcop    ALMA_TP.NGC_1672.HCOP10.C06.image.fits
+ngc1672         cs      ALMA_TP.NGC_1672.CS21.C06.image.fits
+
+ngc1792         hcn     ALMA_TP.NGC_1792.HCN10.image.fits
+ngc1792         hcop    ALMA_TP.NGC_1792.HCOP10.image.fits
+ngc1792         cs      ALMA_TP.NGC_1792.CS21.image.fits
+
+ngc2566         hcn     ALMA_TP.NGC_2566.HCN10.image.fits
+ngc2566         hcop    ALMA_TP.NGC_2566.HCOP10.image.fits
+ngc2566         cs      ALMA_TP.NGC_2566.CS21.image.fits
+
+ngc2903         hcn     ALMA_TP.NGC_2903.HCN10.image.fits
+ngc2903         hcop    ALMA_TP.NGC_2903.HCOP10.image.fits
+ngc2903         cs      ALMA_TP.NGC_2903.CS21.image.fits
+
+ngc2997         hcn     ALMA_TP.NGC_2997.HCN10.image.fits
+ngc2997         hcop    ALMA_TP.NGC_2997.HCOP10.image.fits
+ngc2997         cs      ALMA_TP.NGC_2997.CS21.image.fits
+
+ngc3059         hcn     ALMA_TP.NGC_3059.HCN10.image.fits
+ngc3059         hcop    ALMA_TP.NGC_3059.HCOP10.image.fits
+ngc3059         cs      ALMA_TP.NGC_3059.CS21.image.fits
+
+ngc3521         hcn     ALMA_TP.NGC_3521.HCN10.image.fits
+ngc3521         hcop    ALMA_TP.NGC_3521.HCOP10.image.fits
+ngc3521         cs      ALMA_TP.NGC_3521.CS21.image.fits
+
+ngc3621         hcn     ALMA_TP.NGC_3621.HCN10.image.fits
+ngc3621         hcop    ALMA_TP.NGC_3621.HCOP10.image.fits
+ngc3621         cs      ALMA_TP.NGC_3621.CS21.image.fits
+
+ngc4321         hcn     ALMA_TP.NGC_4321.HCN10.image.fits
+ngc4321         hcop    ALMA_TP.NGC_4321.HCOP10.image.fits
+ngc4321         cs      ALMA_TP.NGC_4321.CS21.image.fits
+
+ngc4303         hcn     ALMA_TP.NGC_4303.HCN10.C07.image.fits
+ngc4303         hcop    ALMA_TP.NGC_4303.HCOP10.C07.image.fits
+ngc4303         cs      ALMA_TP.NGC_4303.CS21.C07.image.fits
+
+ngc4535         hcn     ALMA_TP.NGC_4535.HCN10.image.fits
+ngc4535         hcop    ALMA_TP.NGC_4535.HCOP10.image.fits
+ngc4535         cs      ALMA_TP.NGC_4535.CS21.image.fits
+
+ngc4536         hcn     ALMA_TP.NGC_4536.HCN10.image.fits
+ngc4536         hcop    ALMA_TP.NGC_4536.HCOP10.image.fits
+ngc4536         cs      ALMA_TP.NGC_4536.CS21.image.fits
+
+ngc4569         hcn     ALMA_TP.NGC_4569.HCN10.image.fits
+ngc4569         hcop    ALMA_TP.NGC_4569.HCOP10.image.fits
+ngc4569         cs      ALMA_TP.NGC_4569.CS21.image.fits
+
+ngc4826         hcn     ALMA_TP.NGC_4826.HCN10.image.fits
+ngc4826         hcop    ALMA_TP.NGC_4826.HCOP10.image.fits
+ngc4826         cs      ALMA_TP.NGC_4826.CS21.image.fits
+
+ngc5128         hcn     ALMA_TP.NGC_5128.HCN10.image.fits
+ngc5128         hcop    ALMA_TP.NGC_5128.HCOP10.image.fits
+ngc5128         cs      ALMA_TP.NGC_5128.CS21.image.fits
+
+ngc5248         hcn     ALMA_TP.NGC_5248.HCN10.image.fits
+ngc5248         hcop    ALMA_TP.NGC_5248.HCOP10.image.fits
+ngc5248         cs      ALMA_TP.NGC_5248.CS21.image.fits
+
+ngc5643         hcn     ALMA_TP.NGC_5643.HCN10.image.fits
+ngc5643         hcop    ALMA_TP.NGC_5643.HCOP10.image.fits
+ngc5643         cs      ALMA_TP.NGC_5643.CS21.image.fits
+
+ngc6300         hcn     ALMA_TP.NGC_6300.HCN10.image.fits
+ngc6300         hcop    ALMA_TP.NGC_6300.HCOP10.image.fits
+ngc6300         cs      ALMA_TP.NGC_6300.CS21.image.fits
+
+ngc7496         hcn     ALMA_TP.NGC_7496.HCN10.image.fits
+ngc7496         hcop    ALMA_TP.NGC_7496.HCOP10.image.fits
+ngc7496         cs      ALMA_TP.NGC_7496.CS21.image.fits
+
+

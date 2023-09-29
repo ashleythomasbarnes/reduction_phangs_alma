@@ -1,0 +1,34 @@
+##########################################################################
+# MASTER KEY
+##########################################################################
+
+# Locations
+
+key_dir        	     	/vol/alcina/data1/shared/densegas_acatp/imaging/0-ash/imaging_scripts/phangs-dense_keys/
+cleanmask_root		/vol/alcina/data1/shared/densegas_acatp/cleanmasks/
+imaging_root		/vol/alcina/data1/shared/densegas_acatp/imaging/0-ash/products/imaging/
+postprocess_root	/vol/alcina/data1/shared/densegas_acatp/imaging/0-ash/products/postprocess/
+derived_root		/vol/alcina/data1/shared/densegas_acatp/imaging/0-ash/products/derived/
+release_root		/vol/alcina/data1/shared/densegas_acatp/imaging/0-ash/products/release/
+ms_root			/vol/alcina/data1/shared/densegas_acatp/calibration/
+singledish_root		/vol/alcina/data1/shared/densegas_acatp/singledish/
+
+# Data files
+
+ms_key			phangsdense_ms_file_key.txt
+distance_key		distance_key.txt
+cleanmask_key		cleanmask_key.txt
+
+# Not used yet
+singledish_key		phangsdense_singledish_key.txt
+
+# Definitions and mapping
+
+config_key		phangsdense_configs.txt
+target_key		phangsdense_targets.txt
+imaging_key		phangsdense_imaging_recipes.txt
+
+# Not used in this project right now
+#linmos_key		linearmosaic_definitions.txt
+#override_key		overrides.txt
+#dir_key		dir_key.txt
