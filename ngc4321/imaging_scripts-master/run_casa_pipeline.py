@@ -24,12 +24,12 @@ import importlib
 
 # Pipeline directory. Set this to the location on your system
 
-pipedir = '/export/data1/shared/densegas_acatp/imaging/ngc4321/imaging_scripts/'
+pipedir = '/export/data1/shared/densegas_acatp/imaging/ngc4321/imaging_scripts-master/'
 
 # Location of the master key. Set this to the master key that points
 # to all of the keys for your project.
 
-key_file = '/export/data1/shared/densegas_acatp/imaging/ngc4321/imaging_scripts/keys/master_key.txt'
+key_file = '/export/data1/shared/densegas_acatp/imaging/ngc4321/imaging_scripts-master/keys/master_key.txt'
 
 # Change directory to the pipeline directory.
 
@@ -39,10 +39,12 @@ os.chdir(pipedir)
 # the pipeline via a command line call)
 
 sys.path.append(os.getcwd())
-casa_enabled = (sys.argv[0].endswith('start_casa.py'))
-if not casa_enabled:
-    print('Please run this script inside CASA!')
-    sys.exit()
+sys.path.append("./analysis_scripts")
+
+# casa_enabled = (sys.argv[0].endswith('start_casa.py'))
+# if not casa_enabled:
+#     print('Please run this script inside CASA!')
+#     sys.exit()
 
 # Import the logger and initialize the logging. You can change the
 # level of message that you want to see by changing "level" here or

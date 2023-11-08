@@ -65,6 +65,7 @@ line_families = {
         'h53alpha', 'h54alpha', 'h55alpha', 'h56alpha', 'h57alpha', 'h58alpha',
     ],
     'oh': ['oh1612', 'oh1665', 'oh1667', 'oh1720'],
+    'hnco':['hnco43'], 
     }
 
 # The line list dictionary
@@ -218,6 +219,7 @@ line_list = {
     'oh1665': 1.66540180,
     'oh1667': 1.66735900,
     'oh1720': 1.72052990,
+    'hnco43':87.925237, #4(0,4)- 3(0,3),
     }
 
 
