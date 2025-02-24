@@ -65,12 +65,17 @@ line_families = {
         'h53alpha', 'h54alpha', 'h55alpha', 'h56alpha', 'h57alpha', 'h58alpha',
     ],
     'oh': ['oh1612', 'oh1665', 'oh1667', 'oh1720'],
-    'hnco':['hnco43'], 
+    'hnco': ['hnco43'], 
+    'so': ['so3sigma21', 'so3sigma32'], #in CS band
+    'cch':['cch10'],
     }
 
 # The line list dictionary
 
 line_list = {
+    'so3sigma21':86.09395,
+    'so3sigma32':99.29987,
+    'cch10':87.31692500, #N= 1- 0, J=3/2-1/2, F= 2- 1
     'co65': 691.47308,
     'co54': 576.26793,
     'co43': 461.04077,

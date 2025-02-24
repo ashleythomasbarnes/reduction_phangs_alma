@@ -46,4 +46,15 @@
 
 ##########################################################################
 
-all      hcn         all           cube_mosaic.clean
+# all      hcn         all           cube_mosaic.clean
+all      hcop        all           cube_mosaic.clean
+all      cs          all           cube_mosaic.clean
+all      hn13c       all           cube_mosaic.clean
+all      h13cop      all           cube_mosaic.clean
+all      sio         all           cube_mosaic.clean
+all      cch         all           cube_mosaic.clean
+all      hnco        all           cube_mosaic.clean
+all      ha40        all           cube_mosaic.clean
+all      so          all           cube_mosaic.clean
+
+# all      cont        all           continuum_mosaic.clean

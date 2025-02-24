@@ -23,3 +23,5 @@
 ##########################################################################
 
 ngc2903         hcn     ALMA_TP.NGC_2903.HCN10.image.fits
+ngc2903         hcop     ALMA_TP.NGC_2903.HCOP10.image.fits
+ngc2903         cs     ALMA_TP.NGC_2903.CS21.image.fits

@@ -24,7 +24,7 @@ import importlib
 
 #### Provide base directory 
 
-basedir = '/vol/alcina/data1/shared/densegas_acatp/imaging/0-ngc2903/'
+basedir = '/export/data1/shared/densegas_acatp/imaging_2024/ngc2903_v2'
 
 # Pipeline directory. Auto sets this to the location on your system
 
@@ -43,10 +43,12 @@ os.chdir(pipedir)
 # the pipeline via a command line call)
 
 sys.path.append(os.getcwd())
-casa_enabled = (sys.argv[0].endswith('start_casa.py'))
-if not casa_enabled:
-    print('Please run this script inside CASA!')
-    sys.exit()
+sys.path.append("./analysis_scripts")
+
+# casa_enabled = (sys.argv[0].endswith('start_casa.py'))
+# if not casa_enabled:
+#     print('Please run this script inside CASA!')
+#     sys.exit()
 
 # Import the logger and initialize the logging. You can change the
 # level of message that you want to see by changing "level" here or
@@ -77,7 +79,7 @@ this_pph = pph.PostProcessHandler(key_handler=this_kh)
 
 # Make any missing directories
 
-this_kh.make_missing_directories(imaging=True, derived=False, postprocess=True, release=False)
+this_kh.make_missing_directories(imaging=True, derived=True, postprocess=True, release=True)
 
 ##############################################################################
 # Set up what we do this run
@@ -112,33 +114,45 @@ this_kh.make_missing_directories(imaging=True, derived=False, postprocess=True, 
 # image the CO 2-1 line from these, and then postprocess the CO 2-1
 # cubes.
 
+# this_uvh.set_targets(only=['cloudF'])
+# this_uvh.set_interf_configs(only=['12m+7m'])
+# this_uvh.set_line_products(only=['n2hp10'])
+# # this_uvh.set_no_cont_products(True)
+
+# this_imh.set_targets(only=['cloudF'])
+# this_imh.set_interf_configs(only=['12m+7m'])
+# this_imh.set_no_cont_products(True)
+# this_imh.set_line_products(only=['n2hp10'])
+
+# this_pph.set_targets(only=['cloudF'])
+# this_pph.set_interf_configs(only=['12m+7m'])
+# this_pph.set_feather_configs(only=['12m+7m+tp'])
+# this_imh.set_no_cont_products(True)
+# this_imh.set_line_products(only=['n2hp10'])
+
+
 # this_uvh.set_targets()
 # this_uvh.set_interf_configs(only=['12m+7m'])
-# this_uvh.set_line_products()
-# this_uvh.set_no_cont_products(False)
-
-# e.g., could be to be more selective:
-# this_uvh.set_targets(only=['ngc3489','ngc3599','ngc4476'])
-# this_uvh.set_interf_configs(only=['12m+7m'])
-# this_uvh.set_line_products(only=['co21'])
+# this_uvh.set_line_products(only=['n2hp10'])
+# # this_uvh.set_no_cont_products(True)
 
 # this_imh.set_targets()
 # this_imh.set_interf_configs(only=['12m+7m'])
 # this_imh.set_no_cont_products(True)
-# this_imh.set_line_products(only=['co21'])
+# this_imh.set_line_products(only=['n2hp10'])
 
-# this_pph.set_targets('ngc2903')
+# this_pph.set_targets()
 # this_pph.set_interf_configs(only=['12m+7m'])
 # this_pph.set_feather_configs(only=['12m+7m+tp'])
 # this_imh.set_no_cont_products(True)
-# this_imh.set_line_products(only=['hcn10'])
+# this_imh.set_line_products(only=['n2hp10'])
 
 # Use boolean flags to set the steps to be performed when the pipeline
 # is called. See descriptions below (but only edit here).
 
-do_staging = False
+do_staging = True
 do_imaging = True
-do_postprocess = True
+do_postprocess = False
 do_stats = False
 
 ##############################################################################
@@ -178,19 +192,18 @@ if do_staging:
 # clean. The individual parts can be turned on or off with flags to
 # the imaging loop call but this call does everything.
 
-# if do_imaging:
-#     this_imh.loop_imaging(do_all=True)
-
 if do_imaging:
             this_imh.loop_imaging(do_all = False, 
                     do_dirty_image = True, 
-                    do_revert_to_dirty = True, 
+                    # do_revert_to_dirty = False, 
                     do_read_clean_mask = True, 
-                    do_multiscale_clean = False,
-                    do_revert_to_multiscale = False,
+                    do_multiscale_clean = True,
+                    # do_revert_to_multiscale = False,
                     do_singlescale_mask = False,
                     do_singlescale_clean = True,
-                    do_revert_to_singlescale = True)
+                    # do_revert_to_singlescale = False,
+                    do_export_to_fits=True,
+                    overwrite=True)
 
 ##############################################################################
 # Step through postprocessing

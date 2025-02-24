@@ -168,18 +168,18 @@
 
 # Locations
 
-key_dir        	     	/vol/alcina/data1/shared/densegas_acatp/imaging/0-ngc2903/phangs_imaging_scripts-master/phangs-alma_keys/
+key_dir        	    /vol/alcina/data1/shared/densegas_acatp/imaging_2024/ngc2903_v2/phangs_imaging_scripts-master/phangs-alma_keys/
 cleanmask_root		/vol/alcina/data1/shared/densegas_acatp/cleanmasks/
-imaging_root		/vol/alcina/data1/shared/densegas_acatp/imaging/0-ngc2903/products/imaging/
-postprocess_root	/vol/alcina/data1/shared/densegas_acatp/imaging/0-ngc2903/products/postprocess/
-derived_root		/vol/alcina/data1/shared/densegas_acatp/imaging/0-ngc2903/products/derived/
-release_root		/vol/alcina/data1/shared/densegas_acatp/imaging/0-ngc2903/products/release/
-ms_root			/vol/alcina/data1/shared/densegas_acatp/calibration/
+imaging_root		/vol/alcina/data1/shared/densegas_acatp/imaging_2024/ngc2903_v2/products/imaging/
+postprocess_root	/vol/alcina/data1/shared/densegas_acatp/imaging_2024/ngc2903_v2/products/postprocess/
+derived_root		/vol/alcina/data1/shared/densegas_acatp/imaging_2024/ngc2903_v2/products/derived/
+release_root		/vol/alcina/data1/shared/densegas_acatp/imaging_2024/ngc2903_v2/products/release/
+ms_root			    /vol/alcina/data1/shared/densegas_acatp/calibration/
 singledish_root		/vol/alcina/data1/shared/densegas_acatp/singledish/
 
 # Data files
 
-ms_key			ms_file_key.txt
+ms_key			    ms_file_key.txt
 singledish_key		singledish_key.txt
 cleanmask_key		cleanmask_key.txt
 distance_key		distance_key.txt
@@ -192,5 +192,5 @@ moment_key		moment_key.txt
 derived_key		derived_key.txt
 imaging_key		imaging_recipes.txt
 linmos_key		linearmosaic_definitions.txt
-override_key		overrides.txt
+override_key	overrides.txt
 dir_key			dir_key.txt
